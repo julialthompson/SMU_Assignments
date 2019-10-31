@@ -46,6 +46,16 @@ WHERE
 
 -- List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
 --these are the CURRENT managers (end date has not occurred)
+
+SELECT 
+	* 
+FROM 
+	dept_manager AS m
+LEFT JOIN 
+	titles AS t
+	ON m.emp_no = t.emp_no
+
+
 SELECT 
 	d.dept_no
 	,d.dept_name
@@ -62,8 +72,12 @@ INNER JOIN
 LEFT JOIN 
 	employees AS e
 	ON e.emp_no = m.emp_no
+LEFT JOIN 
+	titles AS t
+	ON t.emp_no = e.emp_no
 WHERE 
-	m.to_date = '9999-01-01';
+	m.to_date = '9999-01-01'
+AND t.title = 'Manager'
 	
 	
 -- these are all managers ever with their start and end dates listed
