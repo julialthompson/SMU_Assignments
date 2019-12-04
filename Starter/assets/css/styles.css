@@ -1,0 +1,53 @@
+.navbar-brand {
+    background-color: lightseagreen;
+    font-family: "Georgia", Georgia, serif;
+    font-weight: bold;
+}
+
+#logo {
+    color: white;
+}
+.description-header {
+    color: lightseagreen;
+    font-family: "Georgia", Georgia, serif;
+    font-weight: bold;
+}
+
+.header {
+    color: lightseagreen;
+    font-family: "Georgia", Georgia, serif;
+    font-weight: bold;
+}
+
+.description-content {
+    background: white;
+    padding: 20px;
+    height: 400px;
+}
+
+.content {
+    background: white;
+    padding: 20px;
+    height: 350px;
+}
+
+.photo {
+    width: 150px;
+    height: 68%;
+}
+
+.col-md-6 {
+    background: white;
+    padding: 20px;
+}
+
+.col-xs-12 {
+    background: white;
+    padding: 20px;
+}
+
+.description-content.row {
+    background: white;
+    padding: 0px;
+    margin: 0px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Visualization Homework</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body style="background-color: lightgrey" >
+    <nav class="navbar navbar-default">
+      <div class="row">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="col-xs-9">
+            <a class="navbar-brand" href="index.html" id="logo">Home</a>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right navbar-right-custom">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Plots</a>
+              <ul class="dropdown-menu">
+                <li><a href="subpages/temp.html">Max Temperature</a></li>
+                <li><a href="subpages/humidity.html">Humidity</a></li>
+                <li><a href="subpages/cloudiness.html">Cloudiness</a></li>
+                <li><a href="subpages/wind.html">Wind Speed</a></li>
+              </ul>
+            </li>
+            <li><a href="comparison.html">Comparison</a></li>
+            <li><a href="data.html">Data</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- photos are 800 x 550 pixels -->
+    <div class="container">
+      <section class="row">
+        <div class="col-md-8">
+          <article class="description-content">
+            <h1 class="description-header">Summary: Latitude vs. X</h1>
+            <hr class="description-hr"/>
+            <img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Starter\assets\images\Temperature.png" alt="" id="Latitude vs. Max Temperature" width=250 height=171.8 style="float:left"/>
+            <p style="margin-top: 80px"></p>
+            <p>The purpose of this project was to analyze weather in relationship to distance to the equator. In order to complete this analysis, we pulled weather data from the OpenWeather API for 500 different cities with differing longitudes and latitudes. <br/> <br/>Once the dataset was compiled, we used Matplotlib to plot latitude vs. temperature, wind speed, humidity, and cloudiness. All relevant visualizations and analysis compiled during this study can be found throughout this site.   </p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <section id="area">
+            <div class="content">
+              <h2 class="header">Visualizations</h2>
+              <hr />
+              <div id="images">
+                <a href="temp.html"><img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Starter\assets\images\Temperature.png" alt="Latitude vs. Max Temperature" class="photo" ></a>
+                <a href="humidity.html"><img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Starter\assets\images\Humidity.png" alt="Latitude vs. Humidity" class="photo"></a>
+                <a href="cloudiness.html"><img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Starter\assets\images\Cloudiness.png" alt="Latitude vs. Cloudiness" class="photo"></a>
+                <a href="wind.html"><img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Starter\assets\images\Wind_Speed.png" alt="Latitude vs. Wind Speed" class="photo"></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </body>
+
+</html>
