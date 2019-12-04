@@ -13,7 +13,7 @@
 
   </head>
 
-  <body style="background-color: lightgrey" >
+  <body class ="body" style="background-color: lightgrey" >
     <nav class="navbar navbar-default">
       <div class="row">
         <div class="navbar-header">
@@ -30,6 +30,12 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right navbar-right-custom">
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+             -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Plots</a>
               <ul class="dropdown-menu">
@@ -49,10 +55,10 @@
     <div class="container">
       <section class="row">
         <div class="col-md-8">
-          <article class="description-content">
+          <article id="description-content">
             <h1 class="description-header">Summary: Latitude vs. X</h1>
             <hr class="description-hr"/>
-            <img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Starter\assets\images\Temperature.png" alt="" id="Latitude vs. Max Temperature" width=250 height=171.8 style="float:left"/>
+            <img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Unit_11_Web\Starter\assets\images\Temperature.png" alt="" id="Latitude vs. Max Temperature" width=250 height=171.8 style="float:left"/>
             <p style="margin-top: 80px"></p>
             <p>The purpose of this project was to analyze weather in relationship to distance to the equator. In order to complete this analysis, we pulled weather data from the OpenWeather API for 500 different cities with differing longitudes and latitudes. <br/> <br/>Once the dataset was compiled, we used Matplotlib to plot latitude vs. temperature, wind speed, humidity, and cloudiness. All relevant visualizations and analysis compiled during this study can be found throughout this site.   </p>
           </article>
@@ -63,10 +69,10 @@
               <h2 class="header">Visualizations</h2>
               <hr />
               <div id="images">
-                <a href="temp.html"><img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Starter\assets\images\Temperature.png" alt="Latitude vs. Max Temperature" class="photo" ></a>
-                <a href="humidity.html"><img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Starter\assets\images\Humidity.png" alt="Latitude vs. Humidity" class="photo"></a>
-                <a href="cloudiness.html"><img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Starter\assets\images\Cloudiness.png" alt="Latitude vs. Cloudiness" class="photo"></a>
-                <a href="wind.html"><img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Starter\assets\images\Wind_Speed.png" alt="Latitude vs. Wind Speed" class="photo"></a>
+                <a href="subpages/temp.html"><img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Unit_11_Web\Starter\assets\images\Temperature.png" alt="Latitude vs. Max Temperature" class="photo" ></a>
+                <a href="subpages/humidity.html"><img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Unit_11_Web\Starter\assets\images\Humidity.png" alt="Latitude vs. Humidity" class="photo"></a>
+                <a href="subpages/cloudiness.html"><img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Unit_11_Web\Starter\assets\images\Cloudiness.png" alt="Latitude vs. Cloudiness" class="photo"></a>
+                <a href="subpages/wind.html"><img src="C:\Users\julia\Documents\SMU Data Science Bootcamp\GitHub\Unit_11_Web\Starter\assets\images\Wind_Speed.png" alt="Latitude vs. Wind Speed" class="photo"></a>
               </div>
             </div>
           </section>
